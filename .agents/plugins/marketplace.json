@@ -1,0 +1,20 @@
+{
+  "name": "aiorouter-codex-mas",
+  "interface": {
+    "displayName": "AIOrouter"
+  },
+  "plugins": [
+    {
+      "name": "codex-aiorouter-mas",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex-aiorouter-mas"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "aiorouter": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@aiorouter/mcp"
+      ],
+      "env_vars": [
+        "AIOROUTER_API_KEY"
+      ]
+    }
+  }
+}

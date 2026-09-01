@@ -1,0 +1,40 @@
+{
+  "name": "codex-aiorouter-mas",
+  "version": "0.1.0",
+  "description": "AIOrouter model routing for Codex: one-command provider onboarding, a \"switch to <model>\" skill, and AIOrouter MCP tools (balance, usage, model catalog).",
+  "author": {
+    "name": "AIOCANA Technologies Inc.",
+    "url": "https://aiorouter.ca"
+  },
+  "homepage": "https://aiorouter.ca",
+  "repository": "https://github.com/AIOCANA/aiorouter-codex-mas",
+  "license": "Apache-2.0",
+  "keywords": [
+    "aiorouter",
+    "codex",
+    "model-routing",
+    "llm",
+    "mcp",
+    "aiorouter-ca"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks.json",
+  "interface": {
+    "displayName": "AIOrouter",
+    "shortDescription": "Route Codex to 20+ AI models through AIOrouter",
+    "longDescription": "Adds the AIOrouter model provider to Codex in one install, teaches the \"switch to <model>\" workflow as a skill, and exposes AIOrouter account tools (balance, usage, model catalog) over MCP. Routing works out of the box; multi-agent (MAS) workflows arrive in V2.",
+    "developerName": "AIOCANA",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://aiorouter.ca",
+    "defaultPrompt": [
+      "Switch to a different model",
+      "What model am I using right now?",
+      "Show my AIOrouter balance"
+    ],
+    "brandColor": "#2563EB"
+  }
+}
