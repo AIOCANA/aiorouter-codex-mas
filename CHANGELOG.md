@@ -3,6 +3,16 @@
 All notable changes to the AIOrouter Codex plugin are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows [SemVer](https://semver.org/).
 
+## [Unreleased]
+
+### Added
+- README / SETUP: MAS orchestrator CLI announced — published to npm as `@aiorouter/codex-aiorouter-mas`
+  (companion `aiorouter-codex` command line: plan → human approval → sandboxed execution → review →
+  billing reconciliation; model matrix served live from backend presets).
+
+### Changed
+- Dual-track entry-point table now lists the orchestration lane alongside desktop/CLI routing.
+
 ## [0.1.0] - 2026-09-01
 
 ### Added

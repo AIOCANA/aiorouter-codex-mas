@@ -88,9 +88,10 @@ Supported triggers: "switch to / change to / use <model>".
 ## Two axes: chat model vs orchestration model
 
 "Switch to X" controls the **direct-chat axis** (the model answering your messages).
-MAS orchestration — a later version — selects **execution models server-side** from
-backend presets at plan time (the **plan axis**). The two axes are independent and never
-overwrite each other; this plugin configures only the first.
+MAS orchestration selects **execution models server-side** from backend presets at plan
+time (the **plan axis**) — available now via the companion CLI
+(`npm install -g @aiorouter/codex-aiorouter-mas`, see README). The two axes are
+independent and never overwrite each other; this plugin configures only the first.
 
 ---
 

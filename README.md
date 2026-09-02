@@ -26,8 +26,9 @@ package — set `AIOROUTER_API_KEY` in your environment to enable them.
 ## Two axes: chat model vs orchestration model
 
 "Switch to X" changes the **direct-chat axis** — the model that answers you in Codex.
-AIOrouter multi-agent (MAS) orchestration — arriving in a later version — picks
-**execution models server-side** from backend presets when a plan runs (the **plan axis**).
+AIOrouter multi-agent (MAS) orchestration picks **execution models server-side** from
+backend presets when a plan runs (the **plan axis**) — available today as the companion
+CLI: `npm install -g @aiorouter/codex-aiorouter-mas` (see below).
 The two axes are independent and never overwrite each other. Switching your chat model
 never changes orchestration behavior; orchestration never changes your chat model.
 
@@ -35,9 +36,31 @@ never changes orchestration behavior; orchestration never changes your chat mode
 
 | You are a… | Use |
 |:---|:---|
-| Codex desktop / CLI user | `codex plugin add codex-aiorouter-mas@aiorouter-codex-mas` (routing works out of the box; MAS workflows arrive in V2) |
+| Codex desktop / CLI user | `codex plugin add codex-aiorouter-mas@aiorouter-codex-mas` (routing works out of the box; MAS orchestration via the companion CLI below) |
+| Codex MAS orchestration | `npm install -g @aiorouter/codex-aiorouter-mas` — plan → approve → execute → review with server-side model matrix |
 | Claude Code user | AIOrouter Gateway routing ([AIOCANA/aiorouter-gateway](https://github.com/AIOCANA/aiorouter-gateway)) |
 | DSH user | `@aiorouter/dsh-aiorouter-mas` |
+
+## MAS orchestrator CLI (`@aiorouter/codex-aiorouter-mas`)
+
+The companion command line turns one objective into a governed multi-agent run over the
+Codex SDK: **plan → human approval → sandboxed execution → review → honest billing
+reconciliation**.
+
+```bash
+npm install -g @aiorouter/codex-aiorouter-mas
+set AIOROUTER_API_KEY=ak-…           # same key as above; env var, never a file
+aiorouter-codex presets              # live model-matrix presets (free, non-billed)
+aiorouter-codex cost                 # authoritative balance + spend (free, non-billed)
+aiorouter-codex run "Implement a CLI that converts CSV files to JSON" --risk LOW
+```
+
+What it buys is **control**, not cost arbitrage: a versioned server-side model matrix
+(displayed per run, never hardcoded here), a four-key human approval gate with a local
+plan audit trail, risk-tiered review (LOW may skip; CRIT escalates to mixture-of-agents),
+sandbox posture per role, and a visible `MAS · <model>` execution chip. A plan→execute→review
+workflow makes several model calls — for a simple task a single direct call is usually
+cheaper, and we say so plainly.
 
 ## Coexistence with the script installer
 
