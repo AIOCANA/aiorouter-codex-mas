@@ -1,0 +1,14 @@
+name: verify-publish-gate
+on:
+  push:
+  pull_request:
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run repository publish gate
+        run: node verify-codex-plugin-package.mjs .
