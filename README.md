@@ -81,4 +81,4 @@ here on (marketplace updates, skills, hooks, MCP tools in one package).
 
 - Full setup / troubleshooting: [SETUP.md](SETUP.md)
 - Model catalog: https://aiorouter.ca/docs/model-catalog
-- Support: support@aiorouter.ca · License: Apache-2.0
+- Support: support@aiorouter.ca · License: MIT
