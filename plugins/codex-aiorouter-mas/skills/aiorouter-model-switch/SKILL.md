@@ -31,8 +31,9 @@ ask "what model are you?" or run `codex` and check the status line).
 ## Two axes: chat model vs orchestration model (important)
 
 "Switch to X" controls the **direct-chat axis** — the model that answers your messages.
-AIOrouter's multi-agent (MAS) orchestration — arriving in a later version — selects
-**execution models server-side** from backend presets when a plan runs (the **plan axis**).
+AIOrouter's multi-agent (MAS) orchestration — available via the companion CLI
+`@aiorouter/codex-aiorouter-mas` — selects **execution models server-side** from backend
+presets when a plan runs (the **plan axis**).
 The two axes are independent and never overwrite each other: switching your chat model
 does not change orchestration behavior, and orchestration never changes your chat model.
 Which models run which orchestration roles is decided by the AIOrouter backend, not by

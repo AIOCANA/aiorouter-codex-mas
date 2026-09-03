@@ -5,6 +5,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); version
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-09-03
+
 ### Added
 - README / SETUP: MAS orchestrator CLI announced — published to npm as `@aiorouter/codex-aiorouter-mas`
   (companion `aiorouter-codex` command line: plan → human approval → sandboxed execution → review →
@@ -12,6 +14,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); version
 
 ### Changed
 - Dual-track entry-point table now lists the orchestration lane alongside desktop/CLI routing.
+- Copy alignment: plugin long description and the model-switch skill now state MAS orchestration is
+  available via the companion CLI (previously "arrives in V2").
 
 ## [0.1.0] - 2026-09-01
 
