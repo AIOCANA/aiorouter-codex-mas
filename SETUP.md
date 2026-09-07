@@ -158,4 +158,4 @@ Paste these prompts in a chat to prove the PII Shield is active:
 - [docs/mcp-integration.md](https://github.com/AIOCANA/aiorouter-gateway/blob/main/docs/mcp-integration.md) — advanced MCP tools (10 tools)
   for Claude Code / Codex CLI users (separate optional package)
 - Canonical model list: https://aiorouter.ca/docs/model-catalog
-- Privacy: https://aiorouter.ca/privacy-policy
+- Privacy: https://aiorouter.ca/docs/legal/privacy-policy
